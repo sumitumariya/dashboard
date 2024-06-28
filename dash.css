@@ -1,0 +1,339 @@
+.main {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 230px 260px 260px 260px ;
+    grid-template-rows: 80px 350px auto;
+}
+
+.dash1 {
+    background-color: black;
+    color: white;
+    height: 100vh;
+
+}
+
+.dash1 h1 {
+    margin-bottom: 60px;
+
+}
+
+.dash1 ul li {
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.dash1 ul li a {
+   color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.dash1 ul li a:hover{font-size: 20px;transition: all .5s;
+    color: #8081D6;
+}
+
+.dash2 {
+    background-image: radial-gradient(circle, #d8e683, #83d693, #19c0ac, #00a4bc, #0084b6, #007fb3, #007bb0, #0076ad, #008bb0, #009d98, #00a96d, #7caf3d);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+button {
+    margin-bottom: 23px;
+    margin-left: 55px;
+    scale: 1.2;background-color: #0084b6;
+    border-radius: 6px;
+    color: black;font-style: italic;text-decoration: none;
+}
+
+A {
+    margin-left: 10px;
+}
+
+.dash2 ul li {
+    display: inline;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+#one{display: none;}
+
+.dash2 label{display: none;}
+#one:checked~.main .dash1 {display: block;}
+
+@media screen and (max-width:950px) {
+     .dash2 label{display: block;font-size: 55px;}
+    .main{ display: grid; 
+        
+    }
+
+.dash1{display: none;
+    grid-row-start: 2;
+    grid-row-end: 4;}
+.dash2{background-color: #0084b6;
+grid-column-start: 1;
+/* grid-row-start: 1; */
+grid-column-end: 4;
+
+display: flex;
+justify-content: space-between;
+padding: 20px;
+height: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* ..................................table...................................... */
+
+.last {
+    display: flex;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    padding: 60px;
+
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 5px solid black;
+    
+}
+
+
+
+
+
+th {
+    padding: 60px;
+    background-color: gray;
+}
+
+td {
+    padding: 30px;
+}
+
+.t1 {
+    background-color: skyblue;
+}
+
+.t2 {
+    background-color: whitesmoke;
+}
+
+.t3 {
+    background-color: skyblue;
+}
+
+.t4 {
+    background-color: whitesmoke;
+}
+
+.t5 {
+    background-color: skyblue;
+}
+
+.t6 {
+    background-color: whitesmoke;
+}
+
+/* ...................................cards......................................... */
+
+.cards1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 25px;
+    margin: 50px;
+    padding: 50px;
+    text-align: center;
+    background-color: #B2A6C6;
+}
+
+.cards2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: linear-gradient(to right top, #e95617, #d67d14, #c39831, #b3ad58, #abbe81);
+    padding: 50px;
+    margin: 50px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.cards3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #6337AB;
+    margin: 50px;
+    border-radius: 25px;
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+.cards1:hover{box-shadow: 10px 10px 20px rgb(86, 93, 87);}
+.cards2:hover{box-shadow: 10px 10px 20px rgb(86, 93, 87);}
+.cards3:hover{box-shadow: 10px 10px 20px rgb(86, 93, 87);}
+
+
+
+
+
+
+
+/* .................................team................................ */
+
+
+
+
+
+
+
+.g1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 25px;
+    margin: 50px 20px;
+    padding: 20px 55px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #a8e917, #cdd039, #daba5c, #d1ab7c, #b4a297);
+}
+.g1:hover{box-shadow: 10px 10px 20px rgb(86, 86, 93);}
+.g2:hover{box-shadow: 10px 10px 20px rgb(86, 86, 93);}
+
+.g2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-image: linear-gradient(to bottom, #a8e917, #cdd039, #daba5c, #d1ab7c, #b4a297);
+    margin: 50px 20px;
+   
+    padding: 20px 60px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+
+.s {
+    font-size: 35px;
+}
+/* ................................signup......................................... */
+
+
+.sign1{ grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: linear-gradient(to right, #bb4d1e, #cf4356, #cc4f8b, #b068b9, #8081d6);
+   text-align: center;
+   font-size: 20px;padding: 50px;
+   margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+   
+}
+.sign2{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-image: linear-gradient(to left, #bb4d1e, #cf4356, #cc4f8b, #b068b9, #8081d6);
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+   
+    
+}
+.sign2 h1{text-align: center;padding-bottom: 50px;}
+.sign2 input{border-radius: 15px;
+font-size: 30px;margin-left: 50px;
+width: 500px;}
+.sign2 lable{margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+.sign2 button{border-radius: 15px;
+height: 35px;margin-left: 90px;
+width: 430px;
+color: black;}
+
+
+
+
+/* ....................................login............................................... */
+.log1{ grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    background-image: linear-gradient(to right bottom, #658ac1, #509bb8, #69a6a6, #8eac9c, #acb1a2);
+    font-size: 25px;text-align: center;
+    padding: 50px;
+   
+   
+}
+.log2{
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    margin-right: 20px;
+    margin-top: 30px;
+    margin-bottom: 90px;
+    background-image: linear-gradient(to right bottom, #7aa8ec, #00c2f2, #00d5d6, #65e1a4, #c1e376);
+    
+}
+.log2 lable{margin-left: 50px;
+    font-size: 20px;
+    font-weight: 500;
+   
+}
+.log2 input{border-radius: 15px;
+    font-size: 30px;margin-left: 50px;
+    width: 500px;}
+.log2 button{border-radius: 15px;
+height: 35px;margin-left: 90px;
+width: 430px;
+color: black;}
+.log2 ul li{display: inline;
+padding: 85px;}
+.log2 h1{text-align: center;padding-bottom: 50px;}
+.log2 p{margin-left: 40%;}
+.icon{margin: 50px;
+margin-left: 25%;}
+.o{margin-left: 60px;}
